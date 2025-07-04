@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot Germano Cred</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f3f3f3; padding: 20px; }
+    .container { max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    h1 { color: #004080; margin-bottom: 10px; }
+    textarea, button { width: 100%; padding: 12px; margin-top: 10px; font-size: 16px; }
+    #resposta { margin-top: 20px; background: #eaf3ff; padding: 15px; border-radius: 5px; min-height: 60px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 Assistente Germano Cred</h1>
+    <p>Digite sua pergunta abaixo:</p>
+    <textarea id="pergunta" rows="3" placeholder="Ex: Quais produtos vocês oferecem?"></textarea>
+    <button onclick="consultarBot()">Enviar</button>
+    <div id="resposta"></div>
+  </div>
+
+  <script>
+    const endpoint = "https://germanocredbot.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=botatendimento&api-version=2021-10-01&deploymentName=production";
+    const apiKey = "4i4VnYcdjsQ18bxrGVsvvBF3C0tG61wPMD8Outw1BVTiWjFNtvr5JQQJ99BGACZoyfiXJ3w3AAAaACOGXiSS";
+
+    async function consultarBot() {
+      const pergunta = document.getElementById("pergunta").value;
+      const respostaBox = document.getElementById("resposta");
+      respostaBox.innerHTML = "🔎 Consultando o bot...";
+
+      const resposta = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Ocp-Apim-Subscription-Key": apiKey,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ question: pergunta })
+      });
+
+      const json = await resposta.json();
+      const respostaFinal = json.answers?.[0]?.answer || "Desculpe, não encontrei uma resposta para isso.";
+      respostaBox.innerHTML = "<strong>Resposta:</strong><br>" + respostaFinal;
+    }
+  </script>
+</body>
+</html>
