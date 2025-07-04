@@ -1,0 +1,84 @@
+{
+  "qnaList": [
+    {
+      "id": 1,
+      "answer": "A Germano Cred é uma organização especializada em Crédito Consignado, fundada em 2024, com sede em Alvorada.",
+      "questions": [
+        "O que é a empresa Germano Cred?",
+        "Quem são vocês?",
+        "O que vocês fazem?"
+      ],
+      "metadata": [
+        { "name": "categoria", "value": "informacoes_institucionais" }
+      ]
+    },
+    {
+      "id": 2,
+      "answer": "Nossa missão é fornecer crédito com excelência, promovendo liberdade e segurança aos nossos clientes.",
+      "questions": [
+        "Qual é a missão da empresa?",
+        "Quais são os valores da empresa?"
+      ],
+      "metadata": [
+        { "name": "categoria", "value": "informacoes_institucionais" }
+      ]
+    },
+    {
+      "id": 3,
+      "answer": "Você pode entrar em contato conosco pelo telefone (51) 9995556557, e-mail germanocred@gmail.com ou pelo nosso chat online.",
+      "questions": [
+        "Como posso falar com o suporte?",
+        "Qual é o número de telefone de vocês?",
+        "Como entro em contato com o atendimento?"
+      ],
+      "metadata": [
+        { "name": "categoria", "value": "atendimento_cliente" }
+      ]
+    },
+    {
+      "id": 4,
+      "answer": "Nosso atendimento funciona de segunda a sexta, das 9h às 18h, exceto feriados.",
+      "questions": [
+        "Quais são os horários de atendimento?",
+        "Vocês atendem no fim de semana?"
+      ],
+      "metadata": [
+        { "name": "categoria", "value": "atendimento_cliente" }
+      ]
+    },
+    {
+      "id": 5,
+      "answer": "Oferecemos uma variedade de produtos, incluindo Antecipação de FGTS, Consignado INSS e Consignado CLT. A lista completa está disponível em nosso site.",
+      "questions": [
+        "Quais produtos vocês oferecem?",
+        "Que tipos de produtos eu encontro na empresa?"
+      ],
+      "metadata": [
+        { "name": "categoria", "value": "produtos_servicos" }
+      ]
+    },
+    {
+      "id": 6,
+      "answer": "Sim, seguimos as melhores práticas de segurança da informação e estamos em conformidade com a LGPD.",
+      "questions": [
+        "Meus dados estão seguros?",
+        "Vocês seguem a LGPD?",
+        "É seguro usar a plataforma de vocês?"
+      ],
+      "metadata": [
+        { "name": "categoria", "value": "seguranca_privacidade" }
+      ]
+    },
+    {
+      "id": 7,
+      "answer": "Claro! Basta solicitar a exclusão dos seus dados pelo e-mail exclusao.germanocred@gmail.com e faremos conforme solicitado.",
+      "questions": [
+        "Posso excluir meus dados da plataforma?",
+        "Como faço para remover meus dados?"
+      ],
+      "metadata": [
+        { "name": "categoria", "value": "remocao_dados" }
+      ]
+    }
+  ]
+    }
